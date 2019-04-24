@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Types of extremism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" title="light" href="style.css">
+<script>
+window.quiz_vars = {
+	    question: 0,
+	    score: 0,
+	    correct: 1,
+	    invert: false,
+	    all: false,
+	};
+
+
+window.getNextQuestion = function(){
+	q = window.quiz_vars.question;
+	
+	if (q == 0) {
+		document.getElementById("title").innerHTML = "What is extremism?";
+		document.getElementById("a1").innerHTML = "Holding of extreme political or religious views";
+		document.getElementById("a2").innerHTML = "Advocating complete political or social reform.";
+		document.getElementById("a3").innerHTML = "Being a terrorist.";
+		document.getElementById("a4").innerHTML = "Violently attacking people.";
+		window.quiz_vars.correct = 1;
+	}
+	
+	if (q == 1) {
+		document.getElementById("title").innerHTML = "What is the group of political groups that are seen as supporting the working class?";
+		document.getElementById("a1").innerHTML = "Left Wing";
+		document.getElementById("a2").innerHTML = "Right Wing";
+		document.getElementById("a3").innerHTML = "Centre";
+		document.getElementById("a4").innerHTML = "Capitalism";
+		window.quiz_vars.correct = 1;
+	}
+	
+	if (q == 2) {
+		document.getElementById("title").innerHTML = "What is propaganda?";
+		document.getElementById("a3").innerHTML = "Information of a biased or misleading nature, used to promote political views.";
+		document.getElementById("a1").innerHTML = "Something that doesn't happen in our country.";
+		document.getElementById("a2").innerHTML = "Something that only happens during war.";
+		document.getElementById("a4").innerHTML = "All news.";
+		window.quiz_vars.correct = 3;
+	}
+	
+	if (q == 3) {
+		document.getElementById("title").innerHTML = "Is all extremism violent?";
+		document.getElementById("a1").innerHTML = "Yes";
+		document.getElementById("a2").innerHTML = "No";
+		document.getElementById("a3").innerHTML = "Don't know";
+		document.getElementById("a4").innerHTML = "Maybe";
+		window.quiz_vars.correct = 2;
+	}
+	
+	if (q == 4) {
+		document.getElementById("title").innerHTML = "What is a terrorist?";
+		document.getElementById("a1").innerHTML = "A person who displays immovable, fanatical and uncompromising views and behaviour.";
+		document.getElementById("a2").innerHTML = "An unwillingness or refusal to accept people, views or beliefs that are different to your own.";
+		document.getElementById("a3").innerHTML = "The demonstration of unacceptable behaviour by using any means to express views.";
+		document.getElementById("a4").innerHTML = "Someone who uses violent methods to intimidate others.";
+		window.quiz_vars.correct = 4;
+	}
+	
+	if (q == 5) {
+		document.getElementById("title").innerHTML = "What is the group of political groups that are seen as supporting individualism and the upper class?";
+		document.getElementById("a1").innerHTML = "Left Wing";
+		document.getElementById("a2").innerHTML = "Right Wing";
+		document.getElementById("a3").innerHTML = "Centre";
+		document.getElementById("a4").innerHTML = "Socialism";
+		window.quiz_vars.correct = 2;
+	}
+	
+	if (q == 6) {
+		document.getElementById("title").innerHTML = "What is intollerance?";
+		document.getElementById("a3").innerHTML = "The unwillingness or refusal to accept people, views or belief that are different to your own.";
+		document.getElementById("a2").innerHTML = "A person who displays immovable, fanatical and uncompromising views and behaviour.";
+		document.getElementById("a1").innerHTML = "The demonstration of unacceptable behaviour by using any means to express views.";
+		document.getElementById("a4").innerHTML = "Advocating complete political or social reform.";
+		window.quiz_vars.correct = 3;
+	}
+	
+	if (q == 7) {
+		document.getElementById("title").innerHTML = "Which of these is not a characteristic of propaganda?";
+		document.getElementById("a1").innerHTML = "Spreading fear.";
+		document.getElementById("a2").innerHTML = "Invoking the image of God.";
+		document.getElementById("a3").innerHTML = "Repetition.";
+		document.getElementById("a4").innerHTML = "Being produced by a government.";
+		window.quiz_vars.correct = 4;
+	}
+	
+	if (q == 8) {
+		document.getElementById("title").innerHTML = "Why do people become extremists?";
+		document.getElementById("a1").innerHTML = "Because they are bad people.";
+		document.getElementById("a2").innerHTML = "Because they are unhappy with society.";
+		document.getElementById("a3").innerHTML = "Because they have been manipulated.";
+		document.getElementById("a4").innerHTML = "Because of their own situation.";
+		window.quiz_vars.correct = 1;
+		window.quiz_vars.invert = true;
+	}
+	
+	if (q == 9) {
+		document.getElementById("title").innerHTML = "How do people become extremists?";
+		document.getElementById("a1").innerHTML = "They are influenced by those around them.";
+		document.getElementById("a2").innerHTML = "They are influenced through propaganda.";
+		document.getElementById("a3").innerHTML = "They are influenced by past trauma.";
+		document.getElementById("a4").innerHTML = "It is their own choice.";
+		window.quiz_vars.correct = 4;
+		window.quiz_vars.invert = true;
+	}
+	
+	if (q == 10) {
+		document.getElementById("title").innerHTML = "Which of these make someone more likely to become an extremist.";
+		document.getElementById("a1").innerHTML = "Unemployment since school.";
+		document.getElementById("a2").innerHTML = "Disruptive behaviour in the past.";
+		document.getElementById("a3").innerHTML = "Poor family.";
+		document.getElementById("a4").innerHTML = "Following a non-christian religion (e.g. Islam).";
+		window.quiz_vars.correct = 4;
+		window.quiz_vars.invert = true;
+	}
+	
+	if (q == 11) {
+		document.getElementById("title").innerHTML = "What should you do if you suspect someone is developing extremist views?";
+		document.getElementById("a1").innerHTML = "Go the the police.";
+		document.getElementById("a2").innerHTML = "If they are a child, communicate with teachers/school.";
+		document.getElementById("a3").innerHTML = "Isolate them.";
+		document.getElementById("a4").innerHTML = "Call an anti-terrorist hotline.";
+		window.quiz_vars.correct = 3;
+		window.quiz_vars.invert = true;
+	}
+	
+	if (q == 12) {
+		document.getElementById("title").innerHTML = "Which of these was an extremist?";
+		document.getElementById("a1").innerHTML = "Martin Luther King";
+		document.getElementById("a2").innerHTML = "Mohandas Karamchand Gandhi";
+		document.getElementById("a3").innerHTML = "Rosa-Parks";
+		document.getElementById("a4").innerHTML = "Osama bin Laden";
+		window.quiz_vars.invert = false;
+		window.quiz_vars.all = true;
+	}
+	
+	if (q == 13) {
+		document.getElementById("title").innerHTML = "Which of these was a non-violent extremist.";
+		document.getElementById("a1").innerHTML = "Martin Luther King";
+		document.getElementById("a2").innerHTML = "Osama bin Laden";
+		document.getElementById("a3").innerHTML = "Abdullah Yusuf Azzam";
+		document.getElementById("a4").innerHTML = "William Atchison";
+		window.quiz_vars.invert = false;
+		window.quiz_vars.all = false;
+		window.quiz_vars.correct = 1;
+	}
+	
+	if (q == 14) {
+		document.getElementById("title").innerHTML = "Which of these was a violent extremist.";
+		document.getElementById("a1").innerHTML = "Martin Luther King";
+		document.getElementById("a2").innerHTML = "Rosa-Parks";
+		document.getElementById("a3").innerHTML = "Mohandas Karamchand Gandhi";
+		document.getElementById("a4").innerHTML = "William Atchison";
+		window.quiz_vars.invert = false;
+		window.quiz_vars.all = false;
+		window.quiz_vars.correct = 4;
+	}
+	
+	if (q == 15) {
+		return;
+	}
+	
+	document.getElementById("skip").innerHTML = "Skip Question";
+	
+	document.getElementById("a1").onclick = window.a1;
+	document.getElementById("a2").onclick = window.a2;
+	document.getElementById("a3").onclick = window.a3;
+	document.getElementById("a4").onclick = window.a4;
+	
+	document.getElementById("a1").className = "a1";
+	document.getElementById("a2").className = "a2";
+	document.getElementById("a3").className = "a3";
+	document.getElementById("a4").className = "a4";
+}
+
+window.clearA = function(){
+	document.getElementById("a1").onclick = function() {
+		return false;
+	}
+	document.getElementById("a2").onclick = function() {
+		return false;
+	}
+	document.getElementById("a3").onclick = function() {
+		return false;
+	}
+	document.getElementById("a4").onclick = function() {
+		return false;
+	}
+	document.getElementById("skip").innerHTML = "Next Question";
+	document.getElementById("score").innerHTML = "Current score: " + window.quiz_vars.score;
+}
+
+window.ah = function(number){
+	if(window.quiz_vars.all) {
+		if (window.quiz_vars.invert) {
+			for (var i = 1; i <= 4; i++) {
+				document.getElementById("a" + i).className = "wrong";
+			}
+		} else {
+			for (var i = 1; i <= 4; i++) {
+				document.getElementById("a" + i).className = "correct";
+			}
+			window.quiz_vars.score += 1;
+		}
+	} else {
+		if (window.quiz_vars.invert) {
+			if (window.quiz_vars.correct == number) {
+				document.getElementById("a" + number).className = "wrong";
+			} else {
+				window.quiz_vars.score += 1;
+			}
+			for (var i = 1; i <= 4; i++) {
+				if (i != window.quiz_vars.correct) {
+					document.getElementById("a" + i).className = "correct";
+				}
+			}
+		} else {
+			if (window.quiz_vars.correct == number) {
+				window.quiz_vars.score += 1;
+				document.getElementById("a" + number).className = "correct";
+			} else {
+				document.getElementById("a" + number).className = "wrong";
+				document.getElementById("a" + window.quiz_vars.correct).className = "correct";
+			}
+		}
+	}
+	window.clearA();
+}
+
+window.a1 = function(){
+	window.ah(1);
+}
+
+window.a2 = function(){
+	window.ah(2);
+}
+
+window.a3 = function(){
+	window.ah(3);
+}
+
+window.a4 = function(){
+	window.ah(4);
+}
+
+window.skip = function(){
+	window.quiz_vars.question += 1;
+	
+	window.getNextQuestion();
+}
+</script>
+</head>
+<body id="body">
+	<h1>Types of extremism</h1>
+	<article>
+		<h2 id="title">Question</h2>
+		<section>
+			<a class="a1" onclick="window.a1()" id="a1">A</a> <br>
+			<a class="a2" onclick="window.a2()" id="a2">b</a> <br>
+			<a class="a3" onclick="window.a3()" id="a3">C</a> <br>
+			<a class="a4" onclick="window.a4()" id="a4">D</a> <br> <a class="skip"
+				onclick="window.skip()" id="skip">Skip Question</a>
+			<p id="score">Current score: 0</p>
+		</section>
+	</article>
+	<footer>
+		<p>This project was created for the Skills Challenge Certificate -
+			Global Citizenship by Tomas O'Shea in 2019.</p>
+		<p>
+			Hosting by <a href="https://pages.github.com">GitHub Pages</a>.
+		</p>
+		<p>
+			Created using the <a href="https://www.eclipse.org">Eclipse IDE</a>.
+		</p>
+		<p>
+			Colour palet generated by <a
+				href="https://coolors.co/ffffff-00a5cf-000000-4392f1-c4d7f2">Coolors</a>.
+		</p>
+	</footer>
+	<script>
+		window.getNextQuestion();
+	</script>
+</body>
+</html>
