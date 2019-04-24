@@ -5,6 +5,15 @@
 <title>Types of extremism</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" title="light" href="style.css">
+<script id="complete" type="text/html">
+	<h2>Quiz Complete</h2>
+		<section>
+			<p>Thank you for completing the quiz.</p>
+			<p id="score2">You scored: 0/15</p>
+			<p>Your answers will be deleted once you leave this page unless you choose to share them.</p>
+			<a class="button" href="index.html">Return to start</a>
+		</section>
+</script>
 <script>
 window.quiz_vars = {
 	    question: 0,
@@ -163,6 +172,8 @@ window.getNextQuestion = function(){
 	}
 	
 	if (q == 15) {
+		document.getElementById("area").innerHTML = document.getElementById("complete").innerHTML;
+		document.getElementById("score2").innerHTML = "You scored " + window.quiz_vars.score + "/" + 15;
 		return;
 	}
 	
@@ -258,7 +269,7 @@ window.skip = function(){
 </head>
 <body id="body">
 	<h1>Types of extremism</h1>
-	<article>
+	<article id="area">
 		<h2 id="title">Question</h2>
 		<section>
 			<a class="a1" onclick="window.a1()" id="a1">A</a> <br>
