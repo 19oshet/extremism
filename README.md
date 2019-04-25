@@ -1,2 +1,2 @@
-# extremism
+# Extremism
 A quiz about extremism.
