@@ -5,12 +5,14 @@
 <title>Types of extremism</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" title="light" href="style.css">
+<meta name="twitter:dnt" content="on">
 <script id="complete" type="text/html">
 	<h2>Quiz Complete</h2>
 		<section>
 			<p>Thank you for completing the quiz.</p>
 			<p id="score2">You scored: 0/15</p>
 			<p>Your answers will be deleted once you leave this page unless you choose to share them.</p>
+			<a id="twitter" class="twitter-share-button" href="https://twitter.com/intent/tweet" data-size="large" data-dnt="true">Tweet</a>
 			<a class="button" href="index.html">Return to start</a>
 		</section>
 </script>
@@ -174,6 +176,8 @@ window.getNextQuestion = function(){
 	if (q == 15) {
 		document.getElementById("area").innerHTML = document.getElementById("complete").innerHTML;
 		document.getElementById("score2").innerHTML = "You scored " + window.quiz_vars.score + "/" + 15;
+		var text = "I scored " + window.quiz_vars.score + "/" + 15 + " on the extremism quiz. What about you?";
+		document.getElementById("twitter").setAttribute("href", "https://twitter.com/intent/tweet?text=" + escape(text) + "&hashtags=" + escape("extremismquiz") + "&url=" + escape("https://19oshet.github.io/extremism/"));
 		return;
 	}
 	
@@ -272,11 +276,11 @@ window.skip = function(){
 	<article id="area">
 		<h2 id="title">Question</h2>
 		<section>
-			<a class="a1" onclick="window.a1()" id="a1">A</a> <br>
-			<a class="a2" onclick="window.a2()" id="a2">b</a> <br>
-			<a class="a3" onclick="window.a3()" id="a3">C</a> <br>
-			<a class="a4" onclick="window.a4()" id="a4">D</a> <br> <a class="skip"
-				onclick="window.skip()" id="skip">Skip Question</a>
+			<a class="a1" onclick="window.a1()" id="a1">A</a> <br> <a
+				class="a2" onclick="window.a2()" id="a2">b</a> <br> <a
+				class="a3" onclick="window.a3()" id="a3">C</a> <br> <a
+				class="a4" onclick="window.a4()" id="a4">D</a> <br> <a
+				class="skip" onclick="window.skip()" id="skip">Skip Question</a>
 			<p id="score">Current score: 0</p>
 		</section>
 	</article>
